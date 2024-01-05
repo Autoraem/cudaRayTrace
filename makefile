@@ -3,7 +3,7 @@ CCFLAGS = -O3 -rdc=true -lcudadevrt -lcudart -lcurand
 LDFLAGS = 
 
 SRCS = main.cu
-INCS = color.cuh vec3.cuh ray.cuh camera.cuh
+INCS = color.cuh vec3.cuh ray.cuh
 
 main: main.o
 	$(CC) $(CCFLAGS) -o main main.o $(LDFLAGS) 
